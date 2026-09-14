@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://s1hxrexkwgm"]
+
+[ext_resource type="PackedScene" uid="uid://crnysatq64gon" path="res://pipe.tscn" id="2_g2aih"]
+
+[node name="Node2D" type="Node2D" unique_id=743434547]
+
+[node name="bottom" parent="." unique_id=901497221 instance=ExtResource("2_g2aih")]
+position = Vector2(0, 450)
+
+[node name="top" parent="." unique_id=1787448082 instance=ExtResource("2_g2aih")]
+position = Vector2(0, -450)

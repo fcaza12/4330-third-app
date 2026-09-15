@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://crnysatq64gon"]
 
 [ext_resource type="Script" uid="uid://crpcbdni8qo1v" path="res://pipe.gd" id="1_bepn3"]
+[ext_resource type="Texture2D" uid="uid://be2t47e3ivuh2" path="res://pipe-green-bottom.png" id="2_78010"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2pcl0"]
 size = Vector2(91.25, 593)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2pcl0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufyh1"]
 size = Vector2(94, 599)
@@ -21,8 +20,8 @@ position = Vector2(1.625, 0.5)
 shape = SubResource("RectangleShape2D_2pcl0")
 
 [node name="Sprite2D" type="Sprite2D" parent="pipe" unique_id=967551821]
-scale = Vector2(89.00001, 597)
-texture = SubResource("PlaceholderTexture2D_2pcl0")
+scale = Vector2(1.8461536, 1.9062499)
+texture = ExtResource("2_78010")
 
 [node name="Area2D" type="Area2D" parent="pipe" unique_id=833814336]
 

@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://dva1875e81vx2" path="res://player.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://s1hxrexkwgm" path="res://pipe_set.tscn" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cukp2186pjdij" path="res://death_border.gd" id="3_h2yge"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_b8tnf"]
+distance = -9.0
 
 [node name="Node2D" type="Node2D" unique_id=1525126999]
 
@@ -13,3 +17,13 @@ position = Vector2(37, 143)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=920460595]
 position = Vector2(578, 328)
+
+[node name="death_border" type="Area2D" parent="Camera2D" unique_id=1154438456]
+visible = false
+script = ExtResource("3_h2yge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/death_border" unique_id=878366914]
+physics_interpolation_mode = 2
+visible = false
+position = Vector2(-13, 331)
+shape = SubResource("WorldBoundaryShape2D_b8tnf")

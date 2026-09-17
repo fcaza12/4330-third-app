@@ -13,8 +13,9 @@ script = ExtResource("1_1bvp3")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1134318822]
 scroll_scale = Vector2(0.8, 0.8)
-repeat_size = Vector2(100, 0)
-repeat_times = 16
+scroll_offset = Vector2(413, -5)
+repeat_size = Vector2(200, 0)
+repeat_times = 13
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=238215268]
 texture_repeat = 2

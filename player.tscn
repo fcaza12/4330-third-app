@@ -8,15 +8,13 @@ diffuse_texture = ExtResource("2_onrkg")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2pcl0"]
 
-[node name="Node2D" type="Node2D" unique_id=1698126974]
-
-[node name="character" type="CharacterBody2D" parent="." unique_id=1789599104]
+[node name="character" type="CharacterBody2D" unique_id=1789599104]
 script = ExtResource("1_4flbx")
 
-[node name="Sprite2D" type="Sprite2D" parent="character" unique_id=852815099]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=852815099]
 scale = Vector2(2.6801474, 2.6979163)
 texture = SubResource("CanvasTexture_spvd1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="character" unique_id=1843993517]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1843993517]
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_2pcl0")

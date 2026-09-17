@@ -13,8 +13,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if(Input.is_action_just_pressed("Escape")):
-		get_tree().quit()
+	pass
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
